@@ -1,1 +1,11 @@
 #!/bin/bash
+
+ispresent=1;
+randomchecks=$((RANDOM%2));
+if [ $ispresent -eq $randomchecks ]
+then
+	echo "Employee is present";
+else
+	echo "Employee is absent";
+
+fi
