@@ -2,10 +2,16 @@
 
 ispresent=1;
 randomchecks=$((RANDOM%2));
+wage_per_hour=20;
+working_hour=8;
+
 if [ $ispresent -eq $randomchecks ]
 then
+	daily_wage=$((working_hour*wage_per_hour));
 	echo "Employee is present";
+	
 else
 	echo "Employee is absent";
 
 fi
+echo "Employee dailywage: $"$daily_wage "Rupees";
